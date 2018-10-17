@@ -1,14 +1,14 @@
 {
   "name": "tradechart-backend",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node index",
     "dev": "node-dev index",
     "migrate": "sequelize db:migrate",
     "migrate:undo": "sequelize db:migrate:undo",
-    "migrate:unall": "sequelize db:migrate:undo:all",    
-    "seed":"sequelize db:seed:all"
+    "migrate:unall": "sequelize db:migrate:undo:all",
+    "seed": "sequelize db:seed:all"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -16,6 +16,7 @@
     "dotenv-extended": "^2.3.0",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
+    "moment": "^2.22.2",
     "morgan": "~1.9.0",
     "pg": "^7.5.0",
     "pg-hstore": "^2.3.2",
@@ -23,5 +24,10 @@
   },
   "devDependencies": {
     "node-dev": "^3.1.3"
-  }
+  },
+  "description": "Trade Chart Backend testing",
+  "main": "index.js",
+  "repository": "git@github.com:ariebrainware/tradechart-backend.git",
+  "author": "ariebrainware <jtucke22@mail.ccsf.edu>",
+  "license": "MIT"
 }

@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     close_price: DataTypes.FLOAT,
     highest_price: DataTypes.FLOAT,
     lowest_price: DataTypes.FLOAT,
-    date: DataTypes.DATE
+    date: DataTypes.STRING
   }, {});
   asset.associate = function(models) {
     // associations can be defined here
