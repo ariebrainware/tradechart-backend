@@ -58,6 +58,16 @@ module.exports = {
         date: moment().format('L'),
         createdAt: moment().format('llll'),
         updatedAt: moment().format('llll')
+      },
+      {
+        name: "Bitnex",
+        open_price: "323.39",
+        close_price: "311.23",
+        highest_price: "260.45",
+        lowest_price: "223.21",
+        date: moment().format('L'),
+        createdAt: moment().format('llll'),
+        updatedAt: moment().format('llll')
       }
     ];
     return queryInterface.bulkInsert("assets", asset, {});
